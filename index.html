@@ -9,19 +9,33 @@
   @media (prefers-color-scheme: dark) { :root { --text: #eee; --muted: #aaa; --bg: #141414; --line: #333; } }
   body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
   h1 { font-size: 1.6em; margin-bottom: 0.2em; }
   h2 { font-size: 1.2em; margin-top: 1.6em; }
   .muted { color: var(--muted); }
   hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
   a { color: inherit; }
+  section { scroll-margin-top: 16px; }
 </style>
 </head>
 <body>
 <main>
-<!-- Datenschutzerklärung für die Apps Mond-Info / Moon Info (iOS und Android).
-     Veröffentlicht über GitHub Pages im Repository Robopaul/mooninfo-privacy. -->
+<!-- Datenschutzerklärung für die Apps Mond-Info / Moon Info (iOS und Android) in
+     den sechs Sprachen der App. Veröffentlicht über GitHub Pages im Repository
+     Robopaul/mooninfo-privacy. Ohne Sprungmarke springt die Seite zur Sprache
+     des Browsers; #english bleibt für ältere Verweise erhalten. -->
+<nav aria-label="Sprache / Language">
+  <a href="#de" hreflang="de">Deutsch</a>
+  <a href="#en" hreflang="en">English</a>
+  <a href="#es" hreflang="es">Español</a>
+  <a href="#fr" hreflang="fr">Français</a>
+  <a href="#it" hreflang="it">Italiano</a>
+  <a href="#pt" hreflang="pt">Português</a>
+</nav>
+
+<section id="de" lang="de">
 <h1>Datenschutzerklärung Mond-Info Professional</h1>
-<p class="muted">Stand: 23. Oktober 2026 · <a href="#english">English version below</a></p>
+<p class="muted">Stand: 15. November 2026</p>
 
 <h2>Kurz gesagt</h2>
 <p>Mond-Info Professional berechnet alle Werte auf dem Gerät. Die App sammelt keine
@@ -54,7 +68,7 @@ wurde. Der Beginn des siebentägigen Testzeitraums wird auf dem Gerät
 gespeichert.</p>
 
 <h2>Einstellungen</h2>
-<p>Einstellungen wie Standort, Sprache und Einheiten speichert die App auf dem
+<p>Einstellungen wie Standort, Sprache und Längeneinheit speichert die App auf dem
 Gerät. Je nach Systemeinstellung können sie in Ihrer persönlichen Sicherung bei
 Apple (iCloud) bzw. Google gesichert werden; darauf haben wir keinen Zugriff.</p>
 
@@ -63,11 +77,14 @@ Apple (iCloud) bzw. Google gesichert werden; darauf haben wir keinen Zugriff.</p
 über Sie vor. Bei Fragen erreichen Sie uns unter der oben genannten Adresse.
 Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu
 beschweren.</p>
+</section>
 
 <hr>
 
-<h1 id="english">Moon Info Professional Privacy Policy</h1>
-<p class="muted">Last updated: 23 October 2026</p>
+<section id="en" lang="en">
+<a id="english"></a>
+<h1>Moon Info Professional Privacy Policy</h1>
+<p class="muted">Last updated: 15 November 2026</p>
 
 <h2>In short</h2>
 <p>Moon Info Professional calculates everything on the device. The app does not collect
@@ -98,7 +115,7 @@ app only learns whether the full version has been bought. The start of the
 seven-day trial is stored on the device.</p>
 
 <h2>Settings</h2>
-<p>Settings such as location, language and units are stored on the device.
+<p>Settings such as location, language and unit of length are stored on the device.
 Depending on your system settings they may be included in your personal backup
 with Apple (iCloud) or Google; we have no access to it.</p>
 
@@ -106,6 +123,219 @@ with Apple (iCloud) or Google; we have no access to it.</p>
 <p>As we do not collect personal data, we hold no data about you. If you have
 questions, contact us at the address above. You have the right to lodge a
 complaint with a data protection supervisory authority.</p>
+</section>
+
+<hr>
+
+<section id="es" lang="es">
+<h1>Política de privacidad de Moon Info Professional</h1>
+<p class="muted">Última actualización: 15 de noviembre de 2026</p>
+
+<h2>En resumen</h2>
+<p>Moon Info Professional calcula todos los valores en el dispositivo. La app no recopila
+datos personales, no envía datos a nosotros ni a terceros, no muestra
+publicidad y no utiliza servicios de análisis ni de seguimiento.</p>
+
+<h2>Responsable del tratamiento</h2>
+<p>Joerg Pohl<br>Baluschekstr. 9<br>01159 Dresden<br>Alemania<br>Correo electrónico: <a href="mailto:jpohl@gmx.net">jpohl@gmx.net</a></p>
+
+<h2>Ubicación</h2>
+<p>Para las horas de salida y puesta y la posición de la Luna en el cielo, la
+app necesita una ubicación. Puedes introducirla a mano o, si lo deseas,
+dejar que la determinen los servicios de localización del dispositivo (solo de
+forma aproximada y solo mientras la app está abierta). La ubicación se guarda y
+se procesa únicamente en el dispositivo y nunca se transmite. Puedes retirar el
+permiso en cualquier momento en los ajustes del sistema.</p>
+
+<h2>Calendario</h2>
+<p>La app solo pide acceso al calendario cuando usas la exportación al
+calendario. Entonces crea un calendario propio, «Moon Info», y añade allí las
+citas elegidas. La app solo lee sus propias citas para actualizarlas en una
+nueva exportación. Las demás citas no se analizan ni se transmiten.</p>
+
+<h2>Compra de la versión completa</h2>
+<p>La versión completa se compra a través del App Store de Apple o de Google
+Play. El pago y su gestión corren a cargo de Apple o Google según sus propias
+políticas de privacidad. La app solo sabe si se ha comprado la versión
+completa. El inicio del periodo de prueba de siete días se guarda en el
+dispositivo.</p>
+
+<h2>Ajustes</h2>
+<p>La app guarda en el dispositivo ajustes como la ubicación, el idioma y la
+unidad de longitud. Según la configuración del sistema, pueden incluirse en tu
+copia de seguridad personal en Apple (iCloud) o Google; nosotros no tenemos
+acceso a ella.</p>
+
+<h2>Tus derechos</h2>
+<p>Como no recopilamos datos personales, no tenemos ningún dato sobre ti. Si
+tienes preguntas, puedes escribirnos a la dirección indicada arriba. Tienes
+derecho a presentar una reclamación ante una autoridad de control de
+protección de datos.</p>
+</section>
+
+<hr>
+
+<section id="fr" lang="fr">
+<h1>Politique de confidentialité de Moon Info Professional</h1>
+<p class="muted">Dernière mise à jour : 15 novembre 2026</p>
+
+<h2>En bref</h2>
+<p>Moon Info Professional calcule toutes les valeurs sur l’appareil. L’app ne collecte
+aucune donnée personnelle, n’envoie aucune donnée ni à nous ni à des tiers,
+n’affiche pas de publicité et n’utilise aucun service d’analyse ou de
+suivi.</p>
+
+<h2>Responsable du traitement</h2>
+<p>Joerg Pohl<br>Baluschekstr. 9<br>01159 Dresden<br>Allemagne<br>E-mail : <a href="mailto:jpohl@gmx.net">jpohl@gmx.net</a></p>
+
+<h2>Position</h2>
+<p>Pour les heures de lever et de coucher et la position de la Lune dans le
+ciel, l’app a besoin d’une position. Vous pouvez la saisir à la main ou, si
+vous le souhaitez, la laisser déterminer par la localisation de l’appareil
+(seulement approximative, seulement lorsque l’app est ouverte). La position est
+enregistrée et traitée uniquement sur l’appareil et n’est jamais transmise.
+Vous pouvez retirer l’autorisation à tout moment dans les réglages du
+système.</p>
+
+<h2>Calendrier</h2>
+<p>L’app ne demande l’accès au calendrier que si vous utilisez l’export vers le
+calendrier. Elle crée alors son propre calendrier, « Moon Info », et y ajoute
+les rendez-vous choisis. L’app ne lit que ses propres rendez-vous, afin de les
+mettre à jour lors d’un nouvel export. Les autres rendez-vous ne sont ni
+analysés ni transmis.</p>
+
+<h2>Achat de la version complète</h2>
+<p>La version complète s’achète via l’App Store d’Apple ou Google Play. Le
+paiement et son traitement sont assurés par Apple ou Google selon leurs
+propres règles de confidentialité. L’app sait seulement si la version complète
+a été achetée. Le début de la période d’essai de sept jours est enregistré sur
+l’appareil.</p>
+
+<h2>Réglages</h2>
+<p>L’app enregistre sur l’appareil des réglages comme la position, la langue et
+l’unité de longueur. Selon les réglages du système, ils peuvent être inclus
+dans votre sauvegarde personnelle chez Apple (iCloud) ou Google ; nous n’y
+avons pas accès.</p>
+
+<h2>Vos droits</h2>
+<p>Comme nous ne collectons aucune donnée personnelle, nous ne détenons aucune
+donnée vous concernant. Pour toute question, contactez-nous à l’adresse
+indiquée ci-dessus. Vous avez le droit d’introduire une réclamation auprès
+d’une autorité de contrôle de la protection des données.</p>
+</section>
+
+<hr>
+
+<section id="it" lang="it">
+<h1>Informativa sulla privacy di Moon Info Professional</h1>
+<p class="muted">Ultimo aggiornamento: 15 novembre 2026</p>
+
+<h2>In breve</h2>
+<p>Moon Info Professional calcola tutti i valori sul dispositivo. L’app non raccoglie dati
+personali, non invia dati a noi né a terzi, non mostra pubblicità e non usa
+servizi di analisi o di tracciamento.</p>
+
+<h2>Titolare del trattamento</h2>
+<p>Joerg Pohl<br>Baluschekstr. 9<br>01159 Dresden<br>Germania<br>E-mail: <a href="mailto:jpohl@gmx.net">jpohl@gmx.net</a></p>
+
+<h2>Posizione</h2>
+<p>Per gli orari di sorgere e tramonto e la posizione della Luna nel cielo,
+l’app ha bisogno di una posizione. Puoi inserirla a mano oppure, se lo
+desideri, farla determinare dai servizi di localizzazione del dispositivo (solo
+in modo approssimativo e solo mentre l’app è aperta). La posizione viene
+salvata ed elaborata esclusivamente sul dispositivo e non viene mai
+trasmessa. Puoi revocare l’autorizzazione in qualsiasi momento nelle
+impostazioni di sistema.</p>
+
+<h2>Calendario</h2>
+<p>L’app chiede l’accesso al calendario solo se usi l’esportazione nel
+calendario. In tal caso crea un proprio calendario, “Moon Info”, e vi inserisce
+gli appuntamenti scelti. L’app legge solo i propri appuntamenti, per
+aggiornarli in una nuova esportazione. Gli altri appuntamenti non vengono né
+analizzati né trasmessi.</p>
+
+<h2>Acquisto della versione completa</h2>
+<p>La versione completa si acquista tramite l’App Store di Apple o Google Play.
+Il pagamento e la sua gestione sono a cura di Apple o Google secondo le loro
+informative sulla privacy. L’app sa soltanto se la versione completa è stata
+acquistata. L’inizio del periodo di prova di sette giorni viene salvato sul
+dispositivo.</p>
+
+<h2>Impostazioni</h2>
+<p>L’app salva sul dispositivo impostazioni come la posizione, la lingua e
+l’unità di lunghezza. A seconda delle impostazioni di sistema, possono essere
+incluse nel tuo backup personale presso Apple (iCloud) o Google; noi non vi
+abbiamo accesso.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Poiché non raccogliamo dati personali, non conserviamo alcun dato che ti
+riguardi. Per domande puoi contattarci all’indirizzo indicato sopra. Hai il
+diritto di proporre reclamo a un’autorità di controllo per la protezione dei
+dati.</p>
+</section>
+
+<hr>
+
+<section id="pt" lang="pt">
+<h1>Política de privacidade do Moon Info Professional</h1>
+<p class="muted">Última atualização: 15 de novembro de 2026</p>
+
+<h2>Em resumo</h2>
+<p>O Moon Info Professional calcula todos os valores no dispositivo. O aplicativo não coleta
+dados pessoais, não envia dados para nós nem para terceiros, não exibe
+publicidade e não usa serviços de análise ou rastreamento.</p>
+
+<h2>Responsável pelo tratamento</h2>
+<p>Joerg Pohl<br>Baluschekstr. 9<br>01159 Dresden<br>Alemanha<br>E-mail: <a href="mailto:jpohl@gmx.net">jpohl@gmx.net</a></p>
+
+<h2>Localização</h2>
+<p>Para os horários de nascer e ocaso e a posição da Lua no céu, o aplicativo
+precisa de uma localização. Ela pode ser inserida à mão ou, se você quiser,
+determinada pelos serviços de localização do dispositivo (apenas de forma
+aproximada e apenas enquanto o aplicativo está aberto). A localização é
+armazenada e processada somente no dispositivo e nunca é transmitida. A
+permissão pode ser revogada a qualquer momento nos ajustes do sistema.</p>
+
+<h2>Calendário</h2>
+<p>O aplicativo só pede acesso ao calendário quando você usa a exportação para
+o calendário. Ele cria então um calendário próprio, “Moon Info”, e adiciona
+nele os eventos escolhidos. O aplicativo lê apenas os próprios eventos, para
+atualizá-los numa nova exportação. Os outros eventos não são analisados nem
+transmitidos.</p>
+
+<h2>Compra da versão completa</h2>
+<p>A versão completa é comprada pela App Store da Apple ou pelo Google Play. O
+pagamento e o processamento ficam a cargo da Apple ou do Google, conforme as
+respectivas políticas de privacidade. O aplicativo só sabe se a versão
+completa foi comprada. O início do período de avaliação de sete dias é
+armazenado no dispositivo.</p>
+
+<h2>Ajustes</h2>
+<p>O aplicativo armazena no dispositivo ajustes como a localização, o idioma e
+a unidade de comprimento. Dependendo das configurações do sistema, eles podem
+ser incluídos no seu backup pessoal na Apple (iCloud) ou no Google; não temos
+acesso a ele.</p>
+
+<h2>Seus direitos</h2>
+<p>Como não coletamos dados pessoais, não temos nenhum dado sobre você. Em caso
+de dúvidas, entre em contato pelo endereço indicado acima. Você tem o direito
+de apresentar uma reclamação a uma autoridade de proteção de dados.</p>
+</section>
 </main>
+<script>
+  // Ohne Sprungmarke zur Sprache des Browsers springen (Deutsch steht oben)
+  (function () {
+    if (location.hash) return;
+    var languages = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < languages.length; i++) {
+      var code = String(languages[i]).slice(0, 2).toLowerCase();
+      if (code === "de") return;
+      if (["en", "es", "fr", "it", "pt"].indexOf(code) >= 0) {
+        location.replace("#" + code);
+        return;
+      }
+    }
+  })();
+</script>
 </body>
 </html>
